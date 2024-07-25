@@ -2,17 +2,17 @@ import {FlatList, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import CButton from '../../constant/CButton';
-import {
-  decrement,
-  decrementAsync,
-  increment,
-  incrementAsync,
-} from '../Redux/action';
+import {decrementAsync, incrementAsync} from '../Redux/action';
+import {selectCount, selectUserData} from '../Redux/selector';
 
 export default function RScreen1() {
   const dispatch = useDispatch();
-  const count = useSelector(state => state.countreducer.count);
-  const userData = useSelector(state => state.countreducer.userData);
+
+  // const count = useSelector(state => state.countreducer.count);
+  // const userData = useSelector(state => state.countreducer.userData);
+
+  const count = useSelector(selectCount);
+  const userData = useSelector(selectUserData);
 
   const onPressIncrement = () => {
     dispatch(incrementAsync());

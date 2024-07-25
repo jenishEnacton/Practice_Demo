@@ -1,4 +1,6 @@
 import RScreen1 from '../reduxScreens/rScreens/RScreen1';
+import AddUser from '../screens/drawerScreens/AddUser';
+import UserDetail from '../screens/drawerScreens/UserDetail';
 import Screen1 from '../screens/Screen1';
 import Screen2 from '../screens/Screen2';
 import Screen3 from '../screens/Screen3';
@@ -26,6 +28,6 @@ export const TabRoute = {
 };
 
 export const DrawerRoute = {
-  Home,
-  Favourite,
+  AddUser,
+  UserDetail,
 };

@@ -15,6 +15,6 @@ export const TabNav = {
 };
 
 export const DrawerNav = {
-  Home: 'Home',
-  Favourite: 'Favourite',
+  AddUser: 'AddUser',
+  UserDetail: 'UserDetail',
 };

@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 20,
     gap: 20,
+    elevation: 20,
   },
   closeicon: {
     width: 20,

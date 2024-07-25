@@ -27,7 +27,7 @@ export default function Screen3({navigation}) {
   };
 
   const onPressHome = () => {
-    navigation.navigate(StackNav.TabNavigation);
+    navigation.navigate(StackNav.DrawerNavigation);
   };
 
   const onPressRedux = () => {
