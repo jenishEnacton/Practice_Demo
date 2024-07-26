@@ -6,6 +6,9 @@ export const StackNav = {
   TabNavigation: 'TabNavigation',
   DrawerNavigation: 'DrawerNavigation',
   RScreen1: 'RScreen1',
+  User: 'User',
+  UserDetail: 'UserDetail',
+  TopTabNavigation: 'TopTabNavigation',
 };
 
 export const TabNav = {
@@ -17,4 +20,8 @@ export const TabNav = {
 export const DrawerNav = {
   AddUser: 'AddUser',
   UserDetail: 'UserDetail',
+};
+export const TopTabNav = {
+  TopTab1: 'TopTab1',
+  TopTab2: 'TopTab2',
 };

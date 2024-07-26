@@ -25,6 +25,15 @@ export default function StackNavigation() {
         name={StackNav.DrawerNavigation}
         component={StackRoute.DrawerNavigation}
       />
+      <Stack.Screen name={StackNav.User} component={StackRoute.User} />
+      <Stack.Screen
+        name={StackNav.UserDetail}
+        component={StackRoute.Userdetail}
+      />
+      <Stack.Screen
+        name={StackNav.TopTabNavigation}
+        component={StackRoute.TopTabNavigation}
+      />
     </Stack.Navigator>
   );
 }

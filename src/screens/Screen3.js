@@ -34,6 +34,10 @@ export default function Screen3({navigation}) {
     navigation.navigate(StackNav.RScreen1);
   };
 
+  const onPressTopTab = () => {
+    navigation.navigate(StackNav.TopTabNavigation);
+  };
+
   return (
     <SafeAreaView style={styles.main}>
       <StatusBar
@@ -94,6 +98,11 @@ export default function Screen3({navigation}) {
         <View style={{flex: 3, backgroundColor: 'green'}} />
       </View>
       <View style={styles.btnview}>
+        <CButton
+          title={'Tab Screen'}
+          extrasty={styles.homebtn}
+          onPress={onPressTopTab}
+        />
         <CButton
           title={'Redux Screen'}
           extrasty={styles.homebtn}
@@ -185,8 +194,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   homebtn: {
-    width: '40%',
+    width: '30%',
+    height: 70,
     alignSelf: 'center',
+    justifyContent: 'center',
   },
   btnview: {
     flexDirection: 'row',

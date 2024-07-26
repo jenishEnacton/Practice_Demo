@@ -45,6 +45,9 @@ export default function Screen1({navigation}) {
       resetForm();
     }
   };
+  const onPressApiData = () => {
+    navigation.navigate(StackNav.User);
+  };
 
   const onPressopenmodal = () => setIsVisible(true);
   const onPressclosemodal = () => setIsVisible(false);
@@ -91,11 +94,18 @@ export default function Screen1({navigation}) {
           />
           <CButton title={'Submit'} onPress={onPressSubmit} />
         </View>
-        <CButton
-          title={'Open Dialog'}
-          extrasty={styles.dialogbtn}
-          onPress={onPressopenmodal}
-        />
+        <View style={styles.dialogview}>
+          <CButton
+            title={'Api Data'}
+            extrasty={styles.dialogbtn}
+            onPress={onPressApiData}
+          />
+          <CButton
+            title={'Open Dialog'}
+            extrasty={styles.dialogbtn}
+            onPress={onPressopenmodal}
+          />
+        </View>
         <CModal visible={isVisible} onPressClose={onPressclosemodal} />
         <CButton
           title={'Next'}
@@ -149,5 +159,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#6C946F',
     width: 150,
     alignSelf: 'center',
+  },
+  dialogview: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
   },
 });
