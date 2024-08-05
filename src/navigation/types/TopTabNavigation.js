@@ -21,8 +21,7 @@ export default function TopTabNavigation() {
           borderBottomWidth: 0,
         },
         tabBarIndicatorStyle: {
-          drawerActiveBackgroundColor: '#397848',
-          backgroundColor: '#',
+          backgroundColor: '#397848',
         },
       }}>
       <TopTab.Screen name={TopTabNav.TopTab1} component={TopTabRoute.TopTab1} />
